@@ -1,0 +1,4 @@
+{
+  "/(routes)/api/notifications/stream/route": "app/(routes)/api/notifications/stream/route.js",
+  "/(routes)/page": "app/(routes)/page.js"
+}

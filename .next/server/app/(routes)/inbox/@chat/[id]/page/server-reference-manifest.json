@@ -1,0 +1,20 @@
+{
+  "node": {
+    "601d5ad0a199d32d2b4407a893a4113cab0b0dc893": {
+      "workers": {
+        "app/(routes)/inbox/@chat/[id]/page": {
+          "moduleId": "87533",
+          "async": false,
+          "exportedName": "sendMessage",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/inbox/@chat/[id]/page": "action-browser"
+      },
+      "exportedName": "sendMessage",
+      "filename": "src/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,20 @@
+{
+  "node": {
+    "409cb17b15fe0e0b9e2e96453523cafe28656816ca": {
+      "workers": {
+        "app/(routes)/create/page": {
+          "moduleId": "91224",
+          "async": false,
+          "exportedName": "postEntry",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/create/page": "action-browser"
+      },
+      "exportedName": "postEntry",
+      "filename": "src/actions.ts"
+    }
+  },
+  "edge": {}
+}

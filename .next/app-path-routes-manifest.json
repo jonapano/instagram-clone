@@ -1,0 +1,22 @@
+{
+  "/(routes)/@modal/(.)posts/[id]/page": "/(.)posts/[id]",
+  "/(routes)/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/(routes)/api/notifications/push/route": "/api/notifications/push",
+  "/(routes)/api/notifications/stream/route": "/api/notifications/stream",
+  "/(routes)/api/upload/route": "/api/upload",
+  "/(routes)/browse/page": "/browse",
+  "/(routes)/create/page": "/create",
+  "/(routes)/inbox/@chat/[id]/page": "/inbox/[id]",
+  "/(routes)/inbox/@chat/page": "/inbox",
+  "/(routes)/inbox/@contactList/page": "/inbox",
+  "/(routes)/inbox/page": "/inbox",
+  "/(routes)/page": "/",
+  "/(routes)/posts/[id]/page": "/posts/[id]",
+  "/(routes)/profile/bookmarked/page": "/profile/bookmarked",
+  "/(routes)/profile/page": "/profile",
+  "/(routes)/search/page": "/search",
+  "/(routes)/settings/page": "/settings",
+  "/(routes)/users/[username]/page": "/users/[username]",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico"
+}

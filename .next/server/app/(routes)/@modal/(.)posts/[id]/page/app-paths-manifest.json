@@ -1,0 +1,3 @@
+{
+  "/(routes)/@modal/(.)posts/[id]/page": "app/(routes)/@modal/(.)posts/[id]/page.js"
+}

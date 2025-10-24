@@ -1,0 +1,35 @@
+{
+  "node": {
+    "409530bd50bdda3233bd99eabc406f4319978d6cab": {
+      "workers": {
+        "app/(routes)/profile/page": {
+          "moduleId": "75262",
+          "async": false,
+          "exportedName": "followProfile",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/profile/page": "action-browser"
+      },
+      "exportedName": "followProfile",
+      "filename": "src/actions.ts"
+    },
+    "40214efc8ed7a1531c4a51790995336cd63d837f25": {
+      "workers": {
+        "app/(routes)/profile/page": {
+          "moduleId": "75262",
+          "async": false,
+          "exportedName": "unfollowProfile",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/profile/page": "action-browser"
+      },
+      "exportedName": "unfollowProfile",
+      "filename": "src/actions.ts"
+    }
+  },
+  "edge": {}
+}
