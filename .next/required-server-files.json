@@ -2,7 +2,6 @@
   "version": 1,
   "config": {
     "env": {},
-    "webpack": null,
     "eslint": {
       "ignoreDuringBuilds": true
     },
@@ -178,6 +177,9 @@
       "swcTraceProfiling": false,
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
+      "turbo": {
+        "rules": {}
+      },
       "typedEnv": false,
       "parallelServerCompiles": false,
       "parallelServerBuildTraces": false,
@@ -287,6 +289,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
+      "rules": {},
       "root": "/Users/Jona/Desktop/instagram-clone"
     }
   },
