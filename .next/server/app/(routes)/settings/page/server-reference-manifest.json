@@ -1,6 +1,6 @@
 {
   "node": {
-    "004c209d872e34d9af4570e300f13c60e156473057": {
+    "0057b7a33c849dc691a33567f118dbe3296778c4ee": {
       "workers": {
         "app/(routes)/settings/page": {
           "moduleId": "38860",
@@ -15,7 +15,7 @@
       "exportedName": "$$RSC_SERVER_ACTION_0",
       "filename": "src/app/(routes)/settings/page.tsx"
     },
-    "402085aaeccffd19a84b4ff792c60685ee1bfc1fb7": {
+    "4054c6e67240b29005fc279845a7e522b103a0e244": {
       "workers": {
         "app/(routes)/settings/page": {
           "moduleId": "38860",

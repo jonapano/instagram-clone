@@ -1,6 +1,6 @@
 {
   "node": {
-    "601d5ad0a199d32d2b4407a893a4113cab0b0dc893": {
+    "60f15d665202ff1b7c4f42d5b82bf04cdac7ca296e": {
       "workers": {
         "app/(routes)/inbox/@chat/[id]/page": {
           "moduleId": "87533",

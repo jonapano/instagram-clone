@@ -1,6 +1,6 @@
 {
   "node": {
-    "409530bd50bdda3233bd99eabc406f4319978d6cab": {
+    "404711686b7778916907e422ba06fbc1d7f26447cf": {
       "workers": {
         "app/(routes)/profile/page": {
           "moduleId": "75262",
@@ -15,7 +15,7 @@
       "exportedName": "followProfile",
       "filename": "src/actions.ts"
     },
-    "40214efc8ed7a1531c4a51790995336cd63d837f25": {
+    "40311bddac157c7f00b22e3ed74d50b7e3a2200c0f": {
       "workers": {
         "app/(routes)/profile/page": {
           "moduleId": "75262",
