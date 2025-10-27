@@ -13,7 +13,7 @@ export default async function Home() {
         </Suspense>
       )}
       {!session && (
-        <div className="flex min-h-screen items-center justify-center">
+        <div className="flex -mt-4 min-h-screen items-center justify-center">
           <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
             <h2 className="mb-4 text-center text-2xl font-semibold text-gray-800">
               Welcome Back

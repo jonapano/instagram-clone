@@ -2,13 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
-  experimental: {
-    turbo: {
-      rules: {}, // empty instead of false
-    },
-  },
-  webpack: (config) => {
-    return config; // ensures Webpack is used
+  turbopack: {
+    // You can leave this empty or add future options here
   },
 };
 

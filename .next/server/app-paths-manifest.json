@@ -1,22 +1,5 @@
 {
-  "/(routes)/@modal/(.)posts/[id]/page": "app/(routes)/@modal/(.)posts/[id]/page.js",
-  "/(routes)/api/auth/[...nextauth]/route": "app/(routes)/api/auth/[...nextauth]/route.js",
-  "/(routes)/api/notifications/push/route": "app/(routes)/api/notifications/push/route.js",
   "/(routes)/api/notifications/stream/route": "app/(routes)/api/notifications/stream/route.js",
-  "/(routes)/api/upload/route": "app/(routes)/api/upload/route.js",
-  "/(routes)/browse/page": "app/(routes)/browse/page.js",
-  "/(routes)/create/page": "app/(routes)/create/page.js",
-  "/(routes)/inbox/@chat/[id]/page": "app/(routes)/inbox/@chat/[id]/page.js",
-  "/(routes)/inbox/@chat/page": "app/(routes)/inbox/@chat/page.js",
-  "/(routes)/inbox/@contactList/page": "app/(routes)/inbox/@contactList/page.js",
-  "/(routes)/inbox/page": "app/(routes)/inbox/page.js",
   "/(routes)/page": "app/(routes)/page.js",
-  "/(routes)/posts/[id]/page": "app/(routes)/posts/[id]/page.js",
-  "/(routes)/profile/bookmarked/page": "app/(routes)/profile/bookmarked/page.js",
-  "/(routes)/profile/page": "app/(routes)/profile/page.js",
-  "/(routes)/search/page": "app/(routes)/search/page.js",
-  "/(routes)/settings/page": "app/(routes)/settings/page.js",
-  "/(routes)/users/[username]/page": "app/(routes)/users/[username]/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

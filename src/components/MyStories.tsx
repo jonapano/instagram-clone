@@ -35,7 +35,7 @@ export default async function MyStories({ myStories }: { myStories: Story[] }) {
         </div>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[425px] h-[90%] rounded-md">
+      <DialogContent className="sm:max-w-[425px] h-[90%] rounded-md bg-white border-white">
         <DialogHeader>
           <DialogTitle>
             <div className="flex gap-2 items-center">

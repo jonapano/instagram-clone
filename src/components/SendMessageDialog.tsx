@@ -8,7 +8,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Avatar, Button } from "@radix-ui/themes"
+import { Button } from "@radix-ui/themes"
+import { Check } from "lucide-react";
 import ChatButton from "./ChatButton";
 import { useState } from "react";
 import { Profile } from "@prisma/client";
@@ -36,7 +37,7 @@ export function SendMessageDialog({
         <DialogTrigger asChild>
             <Button variant="solid">Send message</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] bg-white border-white">
           <DialogHeader>
             <DialogTitle className="text-center pb-3 border-b">New Message</DialogTitle>
             <DialogDescription>
@@ -57,15 +58,16 @@ export function SendMessageDialog({
             {filteredProfiles.map(profile => (
                 <div key={profile.id} className="flex items-center hover:bg-gray-100 cursor-pointer rounded-md">
                     <label htmlFor={profile.id} className="w-full p-2 cursor-pointer flex justify-between items-center">
-                        <div className="flex items-center gap-3">
-                            <div className="rounded-full overflow-hidden">
-                                <img 
-                                src={profile.avatar || ''}
-                                className="w-12 h-12 rounded-full"
-                                />
-                            </div>
-                            <p>{profile.username}</p>
-                        </div>
+                      <div className="flex items-center gap-3">
+                          <div className="rounded-full overflow-hidden">
+                              <img 
+                              src={profile.avatar || ''}
+                              className="w-12 h-12 rounded-full"
+                              />
+                          </div>
+                          <p>{profile.username}</p>
+                      </div>
+                      <div className="relative w-5 h-5">
                         <input
                         type="radio"
                         id={profile.id}
@@ -73,8 +75,10 @@ export function SendMessageDialog({
                         value={profile.id || ''}
                         checked={selectedOption === profile.id}
                         onChange={handleChange}
-                        className="accent-gray-600 cursor-pointer"
+                        className="peer appearance-none w-5 h-5 border border-gray-400 rounded-full cursor-pointer checked:border-gray-600"
                         />
+                        <Check className="absolute inset-0 m-auto w-4 h-4 text-gray-700 opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none" />
+                      </div>
                     </label>
                 </div>
             ))}

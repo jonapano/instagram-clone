@@ -3,7 +3,7 @@
     "008e9bf3f4e1a68b0dfc45a9e30a022856668e28b7": {
       "workers": {
         "app/(routes)/page": {
-          "moduleId": "4203",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "$$RSC_SERVER_ACTION_0",
           "filename": "src/app/(routes)/page.tsx"
@@ -15,573 +15,215 @@
       "filename": "src/app/(routes)/page.tsx",
       "exportedName": "$$RSC_SERVER_ACTION_0"
     },
-    "407735e5c72b446e61233ac6c3308f1e74b2eb4dc2": {
-      "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "postStory",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "postStory",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "postStory",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
-          "async": false,
-          "exportedName": "postStory",
-          "filename": "src/actions.ts"
-        }
-      },
-      "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
-      },
-      "filename": "src/actions.ts",
-      "exportedName": "postStory"
-    },
-    "40225e79596c171cc24dda0588885778dafeecb11d": {
-      "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "likePost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "likePost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "likePost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
-          "async": false,
-          "exportedName": "likePost",
-          "filename": "src/actions.ts"
-        }
-      },
-      "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "action-browser",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
-      },
-      "filename": "src/actions.ts",
-      "exportedName": "likePost"
-    },
-    "408ac2d1a0bdf6cdcd528ad74465c494b00197c8c6": {
-      "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "removeLike",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "removeLike",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "removeLike",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
-          "async": false,
-          "exportedName": "removeLike",
-          "filename": "src/actions.ts"
-        }
-      },
-      "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "action-browser",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
-      },
-      "filename": "src/actions.ts",
-      "exportedName": "removeLike"
-    },
     "001ba664a960626beab8309a5621c274304ef25060": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "getSessionEmail",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "getSessionEmail",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "getSessionEmail",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "getSessionEmail",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "getSessionEmail"
     },
     "00a609008e678b975d017def1d4ed7c2a6dd3e9353": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "getSessionEmailOrThrow",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "getSessionEmailOrThrow",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "getSessionEmailOrThrow",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "getSessionEmailOrThrow",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "getSessionEmailOrThrow"
     },
     "40184b49146ba6da2ccd8f467db3555608ca6f6dc0": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "postComment",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "postComment",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "postComment",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "postComment",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "action-browser",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "postComment"
     },
     "4021b55223078c956a0b01e5a98ba0748fd4e90597": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "unbookmarkPost",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "unbookmarkPost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "unbookmarkPost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "unbookmarkPost",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "action-browser",
-        "app/(routes)/page": "action-browser",
-        "app/(routes)/posts/[id]/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "action-browser"
       },
       "filename": "src/actions.ts",
       "exportedName": "unbookmarkPost"
     },
+    "40225e79596c171cc24dda0588885778dafeecb11d": {
+      "workers": {
+        "app/(routes)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "likePost",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/page": "action-browser"
+      },
+      "filename": "src/actions.ts",
+      "exportedName": "likePost"
+    },
     "40311bddac157c7f00b22e3ed74d50b7e3a2200c0f": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "unfollowProfile",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "unfollowProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "unfollowProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/profile/bookmarked/page": {
-          "moduleId": "97303",
-          "async": false,
-          "exportedName": "unfollowProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/profile/page": {
-          "moduleId": "75262",
-          "async": false,
-          "exportedName": "unfollowProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "unfollowProfile",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/profile/bookmarked/page": "action-browser",
-        "app/(routes)/profile/page": "action-browser",
-        "app/(routes)/users/[username]/page": "action-browser"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "unfollowProfile"
     },
     "404711686b7778916907e422ba06fbc1d7f26447cf": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "followProfile",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "followProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "followProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/profile/bookmarked/page": {
-          "moduleId": "97303",
-          "async": false,
-          "exportedName": "followProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/profile/page": {
-          "moduleId": "75262",
-          "async": false,
-          "exportedName": "followProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "followProfile",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/profile/bookmarked/page": "action-browser",
-        "app/(routes)/profile/page": "action-browser",
-        "app/(routes)/users/[username]/page": "action-browser"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "followProfile"
     },
     "4054c6e67240b29005fc279845a7e522b103a0e244": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "updateProfile",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "updateProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "updateProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/settings/page": {
-          "moduleId": "38860",
-          "async": false,
-          "exportedName": "updateProfile",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateProfile",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/settings/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "updateProfile"
     },
+    "407735e5c72b446e61233ac6c3308f1e74b2eb4dc2": {
+      "workers": {
+        "app/(routes)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "postStory",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/page": "action-browser"
+      },
+      "filename": "src/actions.ts",
+      "exportedName": "postStory"
+    },
+    "408ac2d1a0bdf6cdcd528ad74465c494b00197c8c6": {
+      "workers": {
+        "app/(routes)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "removeLike",
+          "filename": "src/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(routes)/page": "action-browser"
+      },
+      "filename": "src/actions.ts",
+      "exportedName": "removeLike"
+    },
     "40aca44a4b80d7f2dc6347d75702cda00302f5475b": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "getSinglePostData",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "getSinglePostData",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "getSinglePostData",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "getSinglePostData",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "getSinglePostData"
     },
     "40d1577f3621c5b5421dd08d9dea46fdb6691779d8": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "bookmarkPost",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "bookmarkPost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "bookmarkPost",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "bookmarkPost",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "action-browser",
-        "app/(routes)/page": "action-browser",
-        "app/(routes)/posts/[id]/page": "action-browser",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "action-browser"
       },
       "filename": "src/actions.ts",
       "exportedName": "bookmarkPost"
     },
     "40eff60047a45a728c1e31dccf6a6492d6d26d2f41": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "postEntry",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/create/page": {
-          "moduleId": "91224",
-          "async": false,
-          "exportedName": "postEntry",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "postEntry",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "postEntry",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "postEntry",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/create/page": "action-browser",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "postEntry"
     },
     "60f15d665202ff1b7c4f42d5b82bf04cdac7ca296e": {
       "workers": {
-        "app/(routes)/@modal/(.)posts/[id]/page": {
-          "moduleId": "6441",
-          "async": false,
-          "exportedName": "sendMessage",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/inbox/@chat/[id]/page": {
-          "moduleId": "87533",
-          "async": false,
-          "exportedName": "sendMessage",
-          "filename": "src/actions.ts"
-        },
         "app/(routes)/page": {
-          "moduleId": "4203",
-          "async": false,
-          "exportedName": "sendMessage",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/posts/[id]/page": {
-          "moduleId": "34008",
-          "async": false,
-          "exportedName": "sendMessage",
-          "filename": "src/actions.ts"
-        },
-        "app/(routes)/users/[username]/page": {
-          "moduleId": "65393",
+          "moduleId": "[project]/.next-internal/server/app/(routes)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(routes)/page.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "sendMessage",
           "filename": "src/actions.ts"
         }
       },
       "layer": {
-        "app/(routes)/@modal/(.)posts/[id]/page": "rsc",
-        "app/(routes)/inbox/@chat/[id]/page": "action-browser",
-        "app/(routes)/page": "rsc",
-        "app/(routes)/posts/[id]/page": "rsc",
-        "app/(routes)/users/[username]/page": "rsc"
+        "app/(routes)/page": "rsc"
       },
       "filename": "src/actions.ts",
       "exportedName": "sendMessage"
-    },
-    "0057b7a33c849dc691a33567f118dbe3296778c4ee": {
-      "workers": {
-        "app/(routes)/settings/page": {
-          "moduleId": "38860",
-          "async": false,
-          "exportedName": "$$RSC_SERVER_ACTION_0",
-          "filename": "src/app/(routes)/settings/page.tsx"
-        }
-      },
-      "layer": {
-        "app/(routes)/settings/page": "rsc"
-      },
-      "filename": "src/app/(routes)/settings/page.tsx",
-      "exportedName": "$$RSC_SERVER_ACTION_0"
     }
   },
   "edge": {},

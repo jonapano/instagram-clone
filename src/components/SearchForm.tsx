@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function SearchForm() {
     const router = useRouter();
+    
     return (
         <form action={async data => {
             router.push('/search?query=' + data.get('query'));

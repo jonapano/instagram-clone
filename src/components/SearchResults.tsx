@@ -2,6 +2,7 @@ import { prisma } from "@/db"
 import { Avatar } from "@radix-ui/themes"
 import Link from "next/link"
 import PostsGrid from "./PostsGrid"
+import AllSearchResults from "./AllSearchResults"
 
 export default async function SearchResults({query}:{query:string}) {
     const profiles = await prisma.profile.findMany({
@@ -19,6 +20,7 @@ export default async function SearchResults({query}:{query:string}) {
         },
         take: 100,
     })
+    if (!query) return null
     return (
         <div>
             <h1 className="text-lg mt-4">

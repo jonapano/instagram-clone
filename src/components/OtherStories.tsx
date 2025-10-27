@@ -45,7 +45,7 @@ export default function OtherStories({
             </div>
           </DialogTrigger>
 
-          <DialogContent className="sm:max-w-[425px] h-[90%] rounded-md">
+          <DialogContent className="sm:max-w-[425px] h-[90%] rounded-md bg-white border-white">
             <DialogHeader>
               <DialogTitle>
                  <div className="flex gap-2 items-center">
@@ -58,7 +58,7 @@ export default function OtherStories({
               </DialogTitle>
             </DialogHeader>
 
-            <Carousel className="max-w-xs mx-auto">
+            <Carousel className="max-w-xs mx-auto max-h-full">
               <CarouselContent>
                 {otherStories
                   .filter((story) => story.author === profile.email)
