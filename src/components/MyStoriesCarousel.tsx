@@ -17,7 +17,7 @@ export function MyStoriesCarousel({myStories}:{myStories:Story[]}) {
         {myStories.map(story => (
             <CarouselItem key={story.id}>
             <div className="p-1">
-                <Card className="p-0">
+                <Card className="p-0 border-none">
                 <CardContent className="flex aspect-square items-center justify-center p-0">
                     <div>
                         <img src={story.image} alt="" className="rounded-md" />

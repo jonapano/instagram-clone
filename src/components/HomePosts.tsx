@@ -13,6 +13,13 @@ export default async function HomePosts({
     follows:Follower[],
     profiles:Profile[]
 }) {
+
+const profile = await prisma.profile.findFirst({
+    where: {email: "panojona1@gmail.com"}
+})
+
+console.log(profile)
+
     const posts = await prisma.post.findMany({
         where: {
             author: {in: profiles.map(p => p.email)}
@@ -34,9 +41,13 @@ export default async function HomePosts({
             postId: {in: posts.map(p => p.id)}
         }
     })
+
+   
+    
     return(
         <div className="max-w-md mx-auto flex flex-col gap-12">
             {posts.map(post => {
+                
                 const profile = profiles.find(p => p.email === post.author)
                 return (
                     <div key={post.id} className="">

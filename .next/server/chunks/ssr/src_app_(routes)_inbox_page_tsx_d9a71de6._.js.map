@@ -1,1 +1,0 @@
-{"version":3,"sources":["turbopack:///[project]/src/app/(routes)/inbox/page.tsx"],"sourcesContent":["export default function InboxPage() {\n    return (\n      <div></div>\n    )\n}"],"names":[],"mappings":"8EAAe,SAAS,IACpB,MACE,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,CAAA,EAEP"}

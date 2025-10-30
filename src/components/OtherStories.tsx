@@ -58,14 +58,14 @@ export default function OtherStories({
               </DialogTitle>
             </DialogHeader>
 
-            <Carousel className="max-w-xs mx-auto max-h-full">
+            <Carousel className="max-w-xs mx-auto">
               <CarouselContent>
                 {otherStories
                   .filter((story) => story.author === profile.email)
                   .map((story) => (
                     <CarouselItem key={story.id}>
                       <div className="p-1">
-                        <Card className="p-0">
+                        <Card className="p-0 border-none">
                           <CardContent className="flex aspect-square items-center justify-center p-0">
                             <img
                               src={story.image}

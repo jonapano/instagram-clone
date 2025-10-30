@@ -1,10 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  eslint: { ignoreDuringBuilds: true },
-  turbopack: {
-    // You can leave this empty or add future options here
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    turbo: {
+      rules: {},
+    },
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

@@ -3,11 +3,11 @@ import { Post } from '@prisma/client';
 import Link from 'next/link';
 import Masonry from 'react-masonry-css';
 
-
-
 export default function PostsGrid({posts}:{posts:Post[]}) {
+   
     return (
         <div className='max-w-4xl mx-auto'>
+
             <Masonry
                 breakpointCols={{
                     default: 4,

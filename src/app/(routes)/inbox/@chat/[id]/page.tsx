@@ -4,7 +4,7 @@ import { prisma } from "@/db";
 import { Avatar } from "@radix-ui/themes";
 import { format } from "date-fns";
 
-export default async function ChatPage({params}: {params: {id: string}}) {
+export default async function ChatPage({ params }: { params: Promise<{ id: string }>}) {
     const session = await auth();
     if (!session?.user?.email) {
         return <div>Please log in.</div>;
@@ -12,7 +12,7 @@ export default async function ChatPage({params}: {params: {id: string}}) {
     const sessionProfile = await prisma.profile.findFirstOrThrow({
         where: { email: session?.user?.email },
     });
-    const { id } = params;
+    const { id } =  await  params;
     const profile = await prisma.profile.findFirst({
         where: { id },
     });
@@ -31,7 +31,7 @@ export default async function ChatPage({params}: {params: {id: string}}) {
         }
     });
     return (
-        <>
+        <div className="flex flex-col">
             <div className="flex items-center gap-4 ml-4 pb-3 border-b">
                 <Avatar 
                 src={profile.avatar || ""}
@@ -54,6 +54,6 @@ export default async function ChatPage({params}: {params: {id: string}}) {
                 ))}
             </div>
             <SendMessage receiverId={id}/>
-        </>
+        </div>
     );
 }

@@ -52,13 +52,13 @@ export default async  function RootLayout({
             <DesktopNav />
             <div className="pb-24 lg:pb-4 pt-4 px-4 lg:px-8 flex justify-around w-full">
               <div className="w-full">
+                <NotificationListener recieverId={profile?.id ?? ""}  />
                 {children}
               </div>
             </div>
           </div>
           <MobileNav />
         </Theme>
-         <NotificationListener currentUserId={String(profile?.id  || "")} /> 
 
         <Toaster />
 

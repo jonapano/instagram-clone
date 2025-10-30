@@ -17,7 +17,7 @@ export default function NewStory() {
                         <PlusIcon size="42" />
                     </div>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
+                <DialogContent className="bg-white border-white sm:max-w-[425px]">
                 <DialogHeader>
                     <DialogTitle>New Story</DialogTitle>
                 </DialogHeader>

@@ -53,7 +53,9 @@ export default function NewStoryForm() {
                             <Button
                             disabled={isUploading} 
                             onClick={() => fileInRef?.current?.click()}
-                            type="button" variant="ghost">
+                            type="button" 
+                            variant="ghost"
+                            className="cursor-pointer">
                                 {!isUploading && (
                                     <CloudUploadIcon size={16} />
                                 )}
@@ -66,7 +68,7 @@ export default function NewStoryForm() {
                     <TextArea name="caption" className="h-16" placeholder="Add a caption..." />
                 </div>
                 <DialogClose asChild>
-                    <Button type="submit" variant="outline" className="mx-auto">Publish</Button>
+                    <Button type="submit" variant="outline" className="mx-auto cursor-pointer">Publish</Button>
                 </DialogClose>
             </div>
         </form>

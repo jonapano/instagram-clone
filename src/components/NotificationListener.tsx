@@ -1,54 +1,54 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { X } from "lucide-react";
+import { useEffect } from "react";
 import { toast } from "sonner";
 
-type NotificationPayload = {
-  type: string;
-  recipientId: string;
-  title?: string;
-  message?: string;
-  id?: string;
-  meta?: any;
-};
-
-export default function NotificationListener({ currentUserId }: { currentUserId: string }) {
-  const esRef = useRef<EventSource | null>(null);
-
+export default function NotificationListener({recieverId}:{recieverId: string}) {
   useEffect(() => {
-    if (!currentUserId) return;
+    const eventSource = new EventSource("/api/notifications/stream");
 
-    const url = `/api/notifications/stream`;
-    const es = new EventSource(url);
-    esRef.current = es;
-
-    es.addEventListener("notification", (e: MessageEvent) => {
+    eventSource.onmessage = (event) => {
       try {
-        const payload: NotificationPayload = JSON.parse(e.data);
-        // filter notifications for the current user (server could also target specific stream)
-        if (payload.recipientId !== currentUserId) return;
-
-        // show toast using sonner (shadcn recommends sonner)
-        toast(`${payload.title ?? "Notification"} — ${payload.message ?? ""}`, {
-          description: payload.message,
-          // you can pass actions, id, etc.
-        });
-      } catch (err) {
-        console.error("invalid SSE payload", err);
+        const data = JSON.parse(event.data);
+        if (data?.message) {
+          if (recieverId === data.recieverId)
+          toast(
+          <div className="relative flex justify-between items-end gap-x-3">
+            <div className="flex-1">
+              <div className="font-semibold text-sm">{data.title}</div>
+              <div className="text-xs mt-1 text-neutral-80 line-clamp-3 w-full">
+                {data.message}
+              </div>
+            </div>
+           
+            <button
+              onClick={() => toast.dismiss()}
+              className="bg-transparent text-black absolute -top-3 w-7 h-7 -right-3 p-1.5 sm:p-1.5 border-none  shadow-none"
+            >
+              <X className="w-2.5 h-2.5" />
+            </button>
+          </div>,
+          {
+            duration: 5000,
+            position: "top-center",
+          },
+        );
+        }
+      } catch (e) {
+        console.error("Invalid event data", e);
       }
-    });
+    };
 
-    es.onerror = (err) => {
+    eventSource.onerror = (err) => {
       console.error("SSE error", err);
-      // Optionally: attempt reconnect logic (EventSource does basic reconnect automatically)
+      eventSource.close();
     };
 
     return () => {
-      try {
-        es.close();
-      } catch {}
+      eventSource.close();
     };
-  }, [currentUserId]);
+  }, []);
 
   return null;
 }

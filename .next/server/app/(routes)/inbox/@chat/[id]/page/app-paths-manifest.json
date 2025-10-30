@@ -1,3 +1,0 @@
-{
-  "/(routes)/inbox/@chat/[id]/page": "app/(routes)/inbox/@chat/[id]/page.js"
-}

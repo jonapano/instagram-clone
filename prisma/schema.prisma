@@ -82,15 +82,10 @@ model Story {
 }
 
 model Notification {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-
-  title String
-
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
   recipientId String
-
-  message String
-
-  read Boolean
-
-  createdAt DateTime @default(now())
+  message     String
+  read        Boolean
+  createdAt   DateTime @default(now())
 }
