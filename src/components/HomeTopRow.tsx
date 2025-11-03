@@ -7,10 +7,8 @@ import OtherStories from "./OtherStories";
 
 export default async function HomeTopRow({
     follows,
-    profiles
 }:{
     follows:Follower[],
-    profiles:Profile[]
 }) {
     const session = await auth();
     const sessionProfile = session?.user?.email;

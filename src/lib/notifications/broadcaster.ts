@@ -1,14 +1,23 @@
 // lib/notifications/broadcaster.ts
 import EventEmitter from "events";
 
-export type NotificationPayload = {
-  type?: string;
-  id?: string | number;
-  recipientId?: string | number;
+// export type NotificationPayload = {
+//   type?: string;
+//   id?: string 
+//   recipientId?: string 
+//   title?: string;
+//   message?: string;
+//   [k: string]:any ;
+// };
+
+
+export interface Notif {
+type?: string;
+  id?: string 
+  recipientId?: string 
   title?: string;
   message?: string;
-  [k: string]: any;
-};
+}
 
 class Broadcaster {
   private ee = new EventEmitter();
@@ -22,7 +31,7 @@ class Broadcaster {
    * Subscribe to all notifications.
    * Returns an unsubscribe function.
    */
-  subscribe(handler: (payload: NotificationPayload) => void) {
+  subscribe(handler: (payload: Notif) => void) {
     this.ee.on("notify", handler);
     console.log("[broadcaster] subscribe -> total:", this.ee.listenerCount("notify"));
     return () => {
@@ -36,8 +45,8 @@ class Broadcaster {
    * The handler will only be called when payload.recipientId === userId.
    * Returns an unsubscribe function.
    */
-  subscribeForUser(userId: string | number, handler: (payload: NotificationPayload) => void) {
-    const wrapped = (payload: NotificationPayload) => {
+  subscribeForUser(userId: string | number, handler: (payload: Notif) => void) {
+    const wrapped = (payload: Notif) => {
       if (payload == null) return;
       // enforce filtering so this only fires for the intended user
       if (payload.recipientId == null) return;
@@ -56,7 +65,7 @@ class Broadcaster {
    * Publish a notification payload to all listeners.
    * Payload is deep-cloned before emit to avoid accidental mutation by listeners.
    */
-  publish(payload: NotificationPayload) {
+  publish(payload: Notif) {
     try {
       const cloned = JSON.parse(JSON.stringify(payload));
       this.ee.emit("notify", cloned);

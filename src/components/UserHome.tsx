@@ -16,7 +16,7 @@ export default async function UserHome({session}:{session:Session}) {
     })
     return (
         <div className="flex flex-col gap-8">
-            <HomeTopRow follows={follows} profiles={profiles} />
+            <HomeTopRow follows={follows}  />
             <HomePosts follows={follows} profiles={profiles}/>
         </div>
     )

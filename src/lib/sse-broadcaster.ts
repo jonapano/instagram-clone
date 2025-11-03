@@ -1,3 +1,5 @@
+import { Notif } from "./notifications/broadcaster";
+
 type Client = {
   id: number;
   res: WritableStreamDefaultWriter;
@@ -14,7 +16,7 @@ export function removeClient(id: number) {
   if (index !== -1) clients.splice(index, 1);
 }
 
-export function broadcast(data: any) {
+export function broadcast(data: Notif) {
   const encoder = new TextEncoder();
   const payload = encoder.encode(`data: ${JSON.stringify(data)}\n\n`);
   clients.forEach(client => client.res.write(payload));

@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 import { addClient, removeClient } from "@/lib/sse-broadcaster";
+import { Notif } from "@/lib/notifications/broadcaster";
 
 export async function GET(req: NextRequest) {
   const stream = new TransformStream();
@@ -7,7 +8,7 @@ export async function GET(req: NextRequest) {
   const clientId = Date.now();
 
   const encoder = new TextEncoder();
-  const send = (data: any) => writer.write(encoder.encode(`data: ${JSON.stringify(data)}\n\n`));
+  const send = (data: Notif) => writer.write(encoder.encode(`data: ${JSON.stringify(data)}\n\n`));
 
   addClient({ id: clientId, res: writer });
   send({ message: "Connected to SSE stream" });

@@ -13,7 +13,7 @@ export default async function AllSearchResults({query}:{query:string}){
     return (
         <div className="max-w-md mx-auto">
             <h1 className="text-lg mt-4">
-                Search results for "{query}"
+                Search results for &quot;{query}&quot;
             </h1>
             {profiles?.length > 0 && (
                 <div className="grid mt-4 sm:grid-cols-2 gap-2">
